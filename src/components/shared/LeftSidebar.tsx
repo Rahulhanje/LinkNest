@@ -17,7 +17,7 @@ function LeftSidebar() {
         if (isSuccess) navigate(0);
     }, [isSuccess])
     return (
-        <nav className="leftsidebar">
+        <nav className="leftsidebar h-full">
             <div className="felx felx-col gap-11">
                 <Link to="/" className='flex gap-3 items-center'>
                     {/* logo of app */}
@@ -59,4 +59,4 @@ function LeftSidebar() {
     )
 }
 
-export default LeftSidebar
+export default LeftSidebar;

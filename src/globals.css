@@ -93,6 +93,7 @@
     width: 3px;
     height: 3px;
     border-radius: 2px;
+    
   }
 
   .custom-scrollbar::-webkit-scrollbar-track {
@@ -136,7 +137,7 @@
 
   /* Home */
   .home-container {
-    @apply flex flex-col flex-1 items-center gap-10 overflow-scroll py-10 px-5 md:px-8 lg:p-14 custom-scrollbar;
+    @apply flex flex-col flex-1 items-center gap-10 overflow-scroll py-10 px-5 md:px-8  lg:p-14 custom-scrollbar;
   }
 
   .home-posts {
@@ -193,7 +194,7 @@
 
   /* File uploader */
   .file_uploader-img {
-    @apply h-80 lg:h-[480px] w-full rounded-[24px] object-cover object-top;
+    @apply h-80 lg:h-[480px] w-full rounded-[24px] object-cover object-top ;
   }
 
   .file_uploader-label {
@@ -219,7 +220,7 @@
 
   /* Left sidebar */
   .leftsidebar {
-    @apply hidden md:flex px-6 py-10 flex-col justify-between min-w-[270px] bg-dark-2;
+      @apply hidden md:flex px-6 py-10 flex-col justify-between min-w-[270px]   bg-dark-2;
   }
 
   .leftsidebar-link {
