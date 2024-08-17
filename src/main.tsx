@@ -6,7 +6,6 @@ import AuthProvider from './context/AuthContext'
 import { QueryProvider } from './lib/react-query/QueryProvider'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-
     <BrowserRouter>
         <QueryProvider>
             <AuthProvider>
@@ -14,5 +13,4 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
             </AuthProvider>
         </QueryProvider>
     </BrowserRouter>
-
 )

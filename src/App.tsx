@@ -9,10 +9,10 @@ import RootLayout from './_root/RootLayout';
 import { Toaster } from './components/ui/toaster';
 const App = () => {
   return (
-    <main className='flex h-screen'>
+    <main className='h-screen'>
       <Routes>
         {/* {public routes} */}
-        <Route element={<AuthLayout></AuthLayout>}>
+          <Route element={<AuthLayout></AuthLayout>}>
           <Route path='/sign-in' element={<SigninForm />} />
           <Route path='/sign-up' element={<SignupForm />} />
         </Route>

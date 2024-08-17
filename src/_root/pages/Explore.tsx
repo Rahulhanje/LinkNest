@@ -23,9 +23,9 @@ function Explore() {
 
   if(!posts){
     return(
-      <div className='flex-center w-full h-full'>
-        <HomeLoader></HomeLoader>
-      </div>
+      <div className='flex items-center justify-center w-full h-full'>
+  <HomeLoader />
+</div>
     )
   }
   
@@ -87,7 +87,7 @@ function Explore() {
       </div>
 
       {hasNextPage && !searchValue && (
-        <div ref={ref} className="mt-10">
+        <div ref={ref}  className="mt-10">
           <HomeLoader />
         </div>
       )}

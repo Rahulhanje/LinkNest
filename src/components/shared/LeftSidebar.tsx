@@ -17,7 +17,7 @@ function LeftSidebar() {
         if (isSuccess) navigate(0);
     }, [isSuccess])
     return (
-        <nav className="leftsidebar h-full">
+        <nav className="leftsidebar h-screen">
             <div className="felx felx-col gap-11">
                 <Link to="/" className='flex gap-3 items-center'>
                     {/* logo of app */}

@@ -14,8 +14,8 @@ function Topbar() {
    },[isSuccess])
   return (
     <section className="topbar">
-        <div className='flex-between py-4 px-5'>
-            <Link to="/" className='flex overflow-scroll gap-3 items-center'>
+        <div className='flex-between  py-4 px-5'>
+            <Link to="/" className='flex  gap-3 items-center'>
                {/* logo of app */}
                <img src='assets\images\logo.svg' alt='Logo'
                width={130}
