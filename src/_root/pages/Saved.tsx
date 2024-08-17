@@ -1,6 +1,6 @@
 
 import GridPostList from "@/components/shared/GridPostList";
-import Loader, { HomeLoader } from "@/components/shared/Loader";
+import { HomeLoader } from "@/components/shared/Loader";
 import { useGetCurrentUser } from "@/lib/react-query/queriesAndMutations";
 import { Models } from "appwrite";
 

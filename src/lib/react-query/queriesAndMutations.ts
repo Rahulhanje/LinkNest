@@ -24,6 +24,7 @@ import {
     getUserById,
     updateUser,
     getUsers,
+    getUserPosts,
 } from '../appwrite/api'
 import { QUERY_KEYS } from './queryKeys';
 
@@ -235,5 +236,13 @@ export const useUpdatePost = () => {
     return useQuery({
       queryKey: [QUERY_KEYS.GET_USERS],
       queryFn: () => getUsers(limit),
+    });
+  };
+
+  export const useGetUserPosts = (userId?: string) => {
+    return useQuery({
+      queryKey: [QUERY_KEYS.GET_USER_POSTS, userId],
+      queryFn: () => getUserPosts(userId),
+      enabled: !!userId,
     });
   };
