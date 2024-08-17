@@ -5,15 +5,21 @@ import { Input } from '@/components/ui/input';
 import useDebounce from '@/hooks/useDebounce';
 import { useGetPosts, useSearchPosts } from '@/lib/react-query/queriesAndMutations';
 import { useEffect, useState } from "react";
+import { useInView } from 'react-intersection-observer';
 
 function Explore() {
-  // const { ref, inView } = useInView();
+  const { ref, inView } = useInView();
   const { data: posts, fetchNextPage, hasNextPage } = useGetPosts();
   const [searchValue, setSearchValue] = useState("");
   
   const debouncedSearch = useDebounce(searchValue, 500);
   const { data: searchedPosts, isFetching: isSearchFetching } = useSearchPosts(debouncedSearch);
-  
+  useEffect(() => {
+    if (inView && !searchValue) {
+      fetchNextPage();
+    }
+  }, [inView, searchValue]);
+
   if(!posts){
     return(
       <div className='flex-center w-full h-full'>
@@ -21,8 +27,8 @@ function Explore() {
       </div>
     )
   }
-
-
+  
+  
   const shouldShowSearchResults = searchValue !== "";
   const shouldShowPosts = !shouldShowSearchResults &&  posts.pages.every((item) => item.documents.length === 0);
 
@@ -73,14 +79,14 @@ function Explore() {
           <p className="text-light-4 mt-10 text-center w-full">End of posts</p>
         ) : (
           posts.pages.map((item, index) => (
-            <GridPostList key={`page-${index}`} posts={item.documents} />
+            <GridPostList key={`page-${index}`} posts={item.documents } />
           ))
         )}
       </div>
 
       {hasNextPage && !searchValue && (
         <div ref={ref} className="mt-10">
-          <Loader />
+          <HomeLoader />
         </div>
       )}
     </div>
