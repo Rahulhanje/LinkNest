@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom'
 
 function RootLayout() {
   return (
-    <div className='w-full flex flex-col h-screen'>
+    <div className='w-full flex flex-col h-screen  md:flex'>
     <Topbar />
     
     <div className='flex flex-1'>

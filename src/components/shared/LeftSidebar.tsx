@@ -21,7 +21,7 @@ function LeftSidebar() {
             <div className="felx felx-col gap-11">
                 <Link to="/" className='flex gap-3 items-center'>
                     {/* logo of app */}
-                    <img src='assets\images\logo.svg' alt='Logo'
+                    <img src='/assets/images/logo.svg' alt='Logo'
                         width={170}
                         height={36}
                     />
@@ -52,7 +52,7 @@ function LeftSidebar() {
 
             </div>
             <Button variant='ghost' className='shad-button_ghost' onClick={() => { signOut() }}>
-                <img src="assets\icons\logout.svg" alt='Logout' />
+                <img src="\assets\icons\logout.svg" alt='Logout' />
                 <p className="small-medium lg:base-medium">logout</p>
             </Button>
         </nav>
