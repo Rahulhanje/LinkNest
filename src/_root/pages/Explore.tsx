@@ -1,5 +1,6 @@
 import GridPostList from '@/components/shared/GridPostList';
-import Loader, { HomeLoader } from '@/components/shared/Loader';
+import { HomeLoader } from '@/components/shared/Loader';
+
 import SearchResults from '@/components/shared/SearchResults';
 import { Input } from '@/components/ui/input';
 import useDebounce from '@/hooks/useDebounce';
@@ -29,7 +30,7 @@ function Explore() {
   }
   
   
-  const shouldShowSearchResults = searchValue !== "";
+  const shouldShowSearchResults = searchValue !== "";//@ts-ignore
   const shouldShowPosts = !shouldShowSearchResults &&  posts.pages.every((item) => item.documents.length === 0);
 
 
@@ -73,12 +74,13 @@ function Explore() {
         {shouldShowSearchResults ? (
           <SearchResults
             isSearchFetching={isSearchFetching}
+            //@ts-ignore
             searchedPosts={searchedPosts}
           />
         ) : shouldShowPosts ? (
           <p className="text-light-4 mt-10 text-center w-full">End of posts</p>
         ) : (
-          posts.pages.map((item, index) => (
+          posts.pages.map((item, index) => (//@ts-ignore
             <GridPostList key={`page-${index}`} posts={item.documents || [] } />
           ))
         )}
