@@ -110,7 +110,8 @@
   }
 
   .common-container {
-    @apply flex flex-col flex-1 items-center gap-10 overflow-scroll py-10 px-5 md:px-8 lg:p-14 custom-scrollbar;
+     /* removed overflow-scroll */
+    @apply flex flex-col flex-1 border-none shadow-none items-center gap-10  py-10 px-5 md:px-8 lg:p-14 custom-scrollbar;
   }
 
   /* All Users */
@@ -137,7 +138,8 @@
 
   /* Home */
   .home-container {
-    @apply flex flex-col flex-1 items-center gap-10 overflow-scroll py-10 px-5 md:px-8  lg:p-14 custom-scrollbar;
+    /* removed overflow-scroll */
+    @apply flex flex-col flex-1 items-center gap-10  py-10 px-5 md:px-8  lg:p-14 custom-scrollbar;
   }
 
   .home-posts {
@@ -184,7 +186,8 @@
 
   /* Saved */
   .saved-container {
-    @apply flex flex-col flex-1 items-center gap-10 overflow-scroll py-10 px-5 md:p-14 custom-scrollbar;
+     /* removed overflow-scroll */
+    @apply flex flex-col flex-1 items-center gap-10  py-10 px-5 md:p-14 custom-scrollbar;
   }
 
   /* Bottom bar */
