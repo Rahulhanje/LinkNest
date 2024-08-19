@@ -20,6 +20,7 @@ import ProfileUploader from "@/components/shared/ProfileUploader";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
+import { Loader } from "lucide-react";
 
 
 const UpdateProfile = () => {
@@ -190,7 +191,7 @@ const UpdateProfile = () => {
                 type="submit"
                 className="shad-button_primary whitespace-nowrap"
                 disabled={isLoadingUpdate}>
-                {isLoadingUpdate && <HomeLoader />}
+                {isLoadingUpdate && <Loader />}
                 Update Profile
               </Button>
             </div>
