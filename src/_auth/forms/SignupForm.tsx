@@ -106,7 +106,7 @@ function SignupForm() {
               <FormItem>
                 <FormLabel>User Name</FormLabel>
                 <FormControl>
-                  <Input type="text" className="shad-input" placeholder="Enter your Name" {...field} />
+                  <Input type="text" className="shad-input" placeholder="Enter unique username" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -120,7 +120,7 @@ function SignupForm() {
               <FormItem>
                 <FormLabel>Email</FormLabel>
                 <FormControl>
-                  <Input type="text" className="shad-input" placeholder="Enter your Name" {...field} />
+                  <Input type="text" className="shad-input" placeholder="example123@gmail.com" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -134,7 +134,7 @@ function SignupForm() {
               <FormItem>
                 <FormLabel>Password</FormLabel>
                 <FormControl>
-                  <Input type="text" className="shad-input" placeholder="Enter your Name" {...field} />
+                  <Input type="text" className="shad-input" placeholder="Enter a strong password" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
