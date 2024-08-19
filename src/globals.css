@@ -139,7 +139,7 @@
   /* Home */
   .home-container {
     /* removed overflow-scroll */
-    @apply flex flex-col flex-1 items-center gap-10  py-10 px-5 md:px-8  lg:p-14 custom-scrollbar;
+    @apply flex flex-col flex-1 items-center sm:overflow-auto overflow-scroll py-10 px-5 md:p-14 custom-scrollbar;
   }
 
   .home-posts {
@@ -175,7 +175,7 @@
   /* Profile */
   .profile-container {
     /* overflow-scroll */
-    @apply flex flex-col items-center flex-1 gap-10 py-10 px-5 md:p-14 custom-scrollbar;
+    @apply flex flex-col items-center overflow-scroll flex-1 gap-10 py-10 px-5 md:p-14 custom-scrollbar;
   }
 
   .profile-inner_container {
@@ -199,7 +199,7 @@
 
   /* File uploader */
   .file_uploader-img {
-    @apply h-80 lg:h-[480px] w-full rounded-[24px] object-cover object-top ;
+    @apply h-80 lg:h-[480px] w-full rounded-[24px] object-cover object-top fixed;
   }
 
   .file_uploader-label {

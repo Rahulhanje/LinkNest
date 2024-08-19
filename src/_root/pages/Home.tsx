@@ -14,7 +14,7 @@ function Home() {
   
   return (
     <div className="flex w-full flex-1">
-      <div className="home-container h-full">
+      <div className="home-container h-screen">
         <div className="home-posts">
           <h2 className="h3-bold md:h2-bold text-left w-full">Home Feed</h2>
           {isPostLoading && !posts ? (<HomeLoader />) : (

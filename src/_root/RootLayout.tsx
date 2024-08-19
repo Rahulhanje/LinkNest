@@ -8,14 +8,14 @@ function RootLayout() {
     <div className="  md:flex">
       <Topbar />
 
-      <div className="flex flex-1">
+      <div className="sm:flex sm:flex-1">
         <div className="hidden md:block fixed h-full w-64">
           <LeftSidebar />
         </div>
 
         {/* Main Content Area */}
-        <div className="flex-1 md:ml-64">
-          <section className="h-full">
+        <div className="flex-1 md:ml-64 ">
+          <section className="h-screen">
             <Outlet />
           </section>
         </div>
