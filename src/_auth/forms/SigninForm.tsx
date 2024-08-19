@@ -94,7 +94,7 @@ function SigninForm() {
               <FormItem>
                 <FormLabel>Password</FormLabel>
                 <FormControl>
-                  <Input type="text" className="shad-input" placeholder="testing123@gmail.com@" {...field} />
+                  <Input type="text" className="shad-input" placeholder="Testing123@" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
