@@ -123,7 +123,7 @@ const PostDetails = () => {
 
             <div className="flex flex-col flex-1 w-full small-medium lg:base-regular">
               <p>{post?.caption}</p>
-              <ul className="flex gap-1 mt-2">
+              <ul className="flex gap-1 mt-2 flex-wrap">
                 {post?.tags.map((tag: string, index: string) => (
                   <li
                     key={`${tag}${index}`}
