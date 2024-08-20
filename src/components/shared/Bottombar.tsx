@@ -6,7 +6,7 @@ function Bottombar() {
 
   return (
 
-    <section className='bottom-bar'>
+    <section className='bottom-bar fixed'>
       {bottombarLinks.map((link) => {
         const isActive = pathname === link.route;
         return (

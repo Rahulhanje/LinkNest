@@ -11,7 +11,7 @@ const EditPost = () => {
      return <HomeLoader/>
   }
   return (
-    <div className="flex flex-1">
+    <div className="flex">
       <div className="common-container">
         <div className="max-w-5xl flex-start gap-3 justify-start w-full">
           <img
