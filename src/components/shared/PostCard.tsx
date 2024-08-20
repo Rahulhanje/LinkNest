@@ -29,11 +29,11 @@ function PostCard({ post }: PostCardProps) {
                         <p className="base-medium lg:body-bold text-light-1">
                             {post.creator.name}
                         </p>
-                        <div className="flex-center gap-2 text-light-3">
+                        <div className=" sm:flex-row sm:gap sm:flex-center  flex-row gap-2  text-light-3">
                             <p className="subtle-semibold lg:small-regular">
                                 {timeAgo(post.$createdAt)}
                             </p>
-                            -
+                            <div className="hidden lg:block">-</div>
                             <p className="subtle-semibold lg:small-regular">
                                 {post.location}
                             </p>
@@ -48,16 +48,17 @@ function PostCard({ post }: PostCardProps) {
                 </Link>
             </div>
             <Link to={`/posts/${post.$id}`}>
-                <div className="small-medium lg:base-medium py-5  overflow-auto">
+                <div className="small-medium lg:base-medium py-5 w-full overflow-auto">
                     <p>{post.caption}</p>
-                    <ul className="flex gap-1 mt-2">
+                    <ul className="flex flex-wrap gap-1 mt-2">
                         {post.tags.map((tag: string) => (
-                            <li className="text-light-3 " key={post.id}>
+                            <li className="text-light-3" key={tag}>
                                 #{tag}
                             </li>
                         ))}
                     </ul>
                 </div>
+
                 <div className="relative w-full max-w-full flex justify-center">
                     <img
                         src={post.imageUrl || "/assets/icons/profile-placeholder.svg"}
