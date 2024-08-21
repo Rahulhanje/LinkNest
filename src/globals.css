@@ -111,7 +111,7 @@
 
   .common-container {
      /* removed overflow-scroll */
-    @apply flex flex-col flex-1 border-none sm:overflow-scroll overflow-scroll shadow-none items-center gap-10  py-10 px-5 md:px-8 lg:p-14 custom-scrollbar;
+    @apply flex flex-col flex-1 border-none sm:overflow-auto overflow-scroll shadow-none items-center gap-10  py-10 px-5 md:px-8 lg:p-14 custom-scrollbar;
   }
 
   /* All Users */
@@ -125,7 +125,7 @@
 
   /* Explore */
   .explore-container {
-    @apply flex flex-col flex-1 items-center overflow-scroll py-10 px-5 md:p-14 custom-scrollbar;
+    @apply flex flex-col flex-1 items-center sm:overflow-auto overflow-scroll py-10 px-5 md:p-14 custom-scrollbar;
   }
 
   .explore-inner_container {
