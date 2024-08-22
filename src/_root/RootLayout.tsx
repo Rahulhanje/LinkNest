@@ -6,10 +6,12 @@ import { Outlet } from "react-router-dom";
 function RootLayout() {
   return (
 <div className="md:flex">
+  {/* Topbar  */}
   <Topbar />
 
   <div className="sm:flex sm:flex-1">
     <div className="hidden md:block fixed h-full w-64">
+      {/* left side bar */}
       <LeftSidebar />
     </div>
 
