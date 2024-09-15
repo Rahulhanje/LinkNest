@@ -2,12 +2,12 @@
 
 ## Project Overview
 
-LinkNest is a web application built with React and Appwrite, enabling users to share and discover links. The application features user authentication, link posting, search functionality, and user profiles. It leverages React Query for data fetching and caching, and Tailwind CSS for styling.
+LinkNest is a web application built with React and Appwrite, enabling users to share and discover posts. The application features user authentication, images posting, search functionality, and user profiles. It leverages React Query for data fetching and caching, and Tailwind CSS for styling.
 
 ## Features
 
 * **User Authentication:** Securely sign in and sign up using email and password.
-* **Link Posting:** Create and share links with rich text formatting.
+* **Posting:** Create and share links with rich text formatting.
 * **Search Functionality:** Easily search for links based on keywords and filters.
 * **User Profiles:** View and manage your profile, including your posted links.
 
