@@ -59,7 +59,7 @@ function PostStats({ post, userId }: PostStatsProps) {
 
     }
     return (
-        <div className="flex justify-between items-center z-20 mt-2">
+        <div className="flex justify-between items-center z-0 mt-2">
             <div className="flex gap-2 mr-5">
 
                 <img src={checkIsLiked(likes, userId)
