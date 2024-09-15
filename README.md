@@ -7,9 +7,9 @@ LinkNest is a web application built with React and Appwrite, enabling users to s
 ## Features
 
 * **User Authentication:** Securely sign in and sign up using email and password.
-* **Posting:** Create and share links with rich text formatting.
-* **Search Functionality:** Easily search for links based on keywords and filters.
-* **User Profiles:** View and manage your profile, including your posted links.
+* **Posting:** Create and share images with rich text formatting.
+* **Search Functionality:** Easily search for posts based on keywords and filters.
+* **User Profiles:** View and manage your profile, including your posted images.
 
 ## Installation
 
